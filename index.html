@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="index.css">
+        <style>
+            @font-face {
+            font-family: 'Quite_Magical_Font';
+            src: url('fonts/quite-magical-font/QuiteMagicalRegular-8VA2.ttf') format('truetype');
+            }
+        </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <section style="height: 100vh; width: 100vw;">
+                    <div data-id="splitcontainer1" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100vw;">
+                        <div data-id="leftsplit1" style="position: absolute; top: 0; left: 0; background: url('media/bg1.jpg') center no-repeat; background-size: 100% 100%; width: 30%; height: 100%; font-family: Quite_Magical_Font;">
+                            <p style="position: absolute; top: 5%; font-size: 90px; font-weight: bold; color: black; left: 5%;">MASTERMIND</p>
+                            <p style="position: absolute; top: 20%; left: 5%; font-weight: bold;">PESHANE S</p>
+                            <p style="position: absolute; top: 29%; left: 5%; color: black; font-weight: bold;">INTERCOLLEGE CHESS EVENT</p>
+                            <p style="position: absolute; top: 38%; left: 5%; font-weight: bold">IISER KOLKATA</p> 
+                            <img data-src="media/IISER-K_Logo.svg" style="position: absolute; top: 50%; left: 5%; width: 15%; height: 8%; background-color: white;">
+                            <p style="font-weight: bold; font-size: 140px; color: white; position: absolute; top: 46%; left: 30%;">+</p>
+                            <img data-src="media/Cover_pawn.png" style="position: absolute; top: 50%; left: 45%; width: 15%; height: 8%; background-color: white;">
+                            <p style="font-weight: bold; font-size: 140px; color: black; position: absolute; top: 58.5%; left: 30%;">=</p>
+                            <img data-src="media/Cover_chat.png" style="position: absolute; top: 75%; left: 7%; width: 55%; height: 20%; background-color: inherit;">
+                            <p id="text-shadows">FUN!</p>
+                        </div>
+                        <div data-id="rightsplit1" style="position: absolute; top: 0; left: 30%; background-color: white; width: 70%; height: 100%; background:url('media/Cover_toon.png') center no-repeat; background-size: 100% 100%; background-color:white;">
+                        </div>
+                    </div>
+                </section>
+
+				<section data-transition="slide-in fade-out" style="height: 100vh; width: 100vw;">
+                    <video
+                        id="vid1"
+                        data-autoplay
+                        src="media/Kasparov_loss.mp4"
+                    ></video>
+                </section>
+
+                <section data-transition="fade-in slide-out" id="knight-slide1" data-background="#b5533c" style="height: 100vh; width: 100vw;"> 
+                    <div style="position: relative; top: 7vh; left: 20%; color: black; font-size: 120px; font-weight: bold; width: 60%; font-family: Quite_Magical_Font;">10<span style="color: white;">0</span>+ F<span style="color: white;">OO</span>TFA<span style="color: white;">LL</span>!</div>
+
+                    <div id="square1_1" style="will-change: transform; background-color: #ffffdd; position: absolute; left: 5vw; top: 6vh; width: 10vw; height: 10vw;"></div>
+                    <div id="square3_1" style="will-change: transform; background-color: #ffffdd; position: absolute; right: 5vw; top: 6vh; width: 10vw; height: 10vw;"></div>
+                    <div id="square2_1" style="will-change: transform; background-color: #86a666; position: absolute; top: 50vh; left: 45vw; width: 10vw; height: 10vw;"></div>
+
+                    <div id="black_knight1_1"></div>
+                    <div id="black_knight2_1" style="opacity: 0.75;"></div>
+                    <div id="black_knight3_1" style="opacity: 0.5;"></div>
+                    <div id="black_knight4_1" style="opacity: 0.25;"></div>
+
+                    <div style="position: absolute; left: 1vw; top: 30vh; background: url('media/cloud.png') center no-repeat; background-size: 100% 100%; width: 42vw; height: 65vh;">
+                        <img data-src="media/trophy.png" style="height: 30%; width: 30%; position: absolute; left: 15%; top: 24%;">
+                        <img data-src="media/medal.png" style="height: 30%; width: 30%; position: absolute; left: 34%; top: 27%;">
+                        <img data-src="media/cash.png" style="height: 18%; width: 20%; position: absolute; left: 58%; top: 30%; transform: rotate(90deg);">
+                        <p style="position: absolute; left: 27.5%; top: 60%; font-family: Quite_Magical_Font; color: black; font-weight: bold;">50</p>
+                        <p style="position: absolute; left: 47%; top: 60%; font-family: Quite_Magical_Font; color: black; font-weight: bold;">50</p>
+                        <p style="position: absolute; left: 65.5%; top: 60%; font-family: Quite_Magical_Font; color: black; font-weight: bold;">35k</p>
+                    </div>
+                    <div style="position: absolute; right: 1vw; top: 35vh; background-color: black; width: 40vw; height: 60vh; border-radius: 30px; font-family: Quite_Magical_Font; color: white;"><br><br>
+                        <ul>
+                            <li>FORMAT: Swiss system.</li>
+                            <li>TIME CONTROL: 20mins no increment</li>
+                            <li>VENUE: Sac building 1st floor</li>
+                            <li>DATE: 08/09/26</li>
+                            <li>CHIEF ARBITER: yet to be decided</li>
+                            <li>Required number of volunteers: 5</li>
+                            <li>TIME: yet to be decided.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section data-transition="slide-in fade-out">
+                    <video
+                        id="vid2"
+                        data-autoplay
+                        src="media/Gukesh_wc.mp4"
+                    ></video>
+                </section>
+
+                <section data-transition="fade-in slide-out" id="knight-slide2" data-background="#ffd400" style="height: 100vh; width: 100vw;"> 
+                    <div style="position: relative; top: 3vh; color: white; font-size: 120px; font-weight: bold; font-family: Quite_Magical_Font">Rules a<span style="color: black">n</span>d <span style="color: black;">Guidelines</span></div>
+
+                    <div id="square1_2" style="will-change: transform; background-color: #ffffdd; position: absolute; left: 0vw; top: 0vh; width: 10vw; height: 10vw;"></div>
+                    <div id="square3_2" style="will-change: transform; background-color: #86a666; position: absolute; left: 90vw; top: 0vh; width: 10vw; height: 10vw;"></div>
+                    <div id="square2_2" style="will-change: transform; background-color: #86a666; position: absolute; top: 82vh; left: 0vw; width: 10vw; height: 10vw;"></div>
+                    <div id="square4_2" style="will-change: transform; background-color: #ffffdd; position: absolute; top: 82vh; left: 90vw; width: 10vw; height: 10vw;"></div>
+
+                    <img id="black_knight1_2" data-src="media/rook.svg">
+                    <img id="black_knight2_2" data-src="media/rook.svg" style="opacity: 0.75;">
+                    <img id="black_knight3_2" data-src="media/rook.svg" style="opacity: 0.5;">
+                    <img id="black_knight4_2" data-src="media/rook.svg" style="opacity: 0.25;">
+
+                    <div style="position: absolute; top: 20vh; left: 20vw; color: black; font-size: 80px; font-weight: bold; font-family: Quite_Magical_Font">General Guidelines</div>
+                    <div style="position: absolute; top: 20vh; right: 20vw; color: white; font-size: 80px; font-weight: bold; font-family: Quite_Magical_Font">Game play rules</div>
+                    <div style="position: absolute; top: 30vh; left: 15vw; color: white; font-size: 30px; font-weight: bold; font-family: Quite_Magical_Font; width: 32vw; height: 50vh; background-color: black;"><br><br>
+                        <ul>
+                            <li>This tournament will be conducted according to FIDE rules and regulations.</li>
+                            <li>Pairings and standings managed by tournament software.</li>
+                            <li>In case of any dispute, chief arbiter's decision is final.</li>
+                            <li>Players need to register before the tournament. A form will be provided for the same. Spot entries are strictly forbidden.</li>
+                            <li>Online participation certificates will be provided to all players.</li>
+                        </ul>
+                    </div>
+                    <div style="position: absolute; top: 30vh; right: 15vw; color: black; font-size: 23px; font-weight: bold; font-family: Quite_Magical_Font; width: 32vw; height: 50vh; background-color: white;">
+                        <br>
+                        <ul>
+                            <li>Players must be seated at their boards at the scheduled time.</li>
+                            <li>Late arrival beyond a 10 minute grace period shall result in a default loss.</li>
+                            <li>If a player touches a piece (with intent), they must move it if legally possible.</li>
+                            <li>If a player touches their opponent's piece (with intent), they must capture it if legally possible.</li>
+                            <li>One illegal may be warned. Two illegal moves will result in a loss.</li>
+                            <li>Running out of time results in a loss unless the opponent has insufficient mating material.</li>
+                            <li>Draw by agreement or threefold repetition or 50 move rule or stalemate or photography.</li>
+                            <li>No electronic items such as smart watches, mobile phones, etc, are allowed inside the playing venue. Any violation shall result in an immediate loss.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section data-transition="slide-in fade-out">
+                    <video
+                        id="vid3"
+                        data-autoplay
+                        src="media/Magnus_loss.mp4"
+                    ></video>
+                </section>
+
+                <section data-transition="fade-in slide-out" data-background="#FF8DA1" style="height: 100vh; width: 100vw;">
+                    <div style="position: relative; top: 3%; left: 10%; color: white; font-size: 120px; font-weight: bold; font-family: Quite_Magical_Font">Pr<span style="color: black;">e</span>vi<span style="color: black">o</span>us <span style="color: black;">Ev<span style="color: white;">e</span>nt</span></div>
+
+                    <div id="square1_3" style="will-change: transform; background-color: #ffffdd; position: absolute; left: 0; top: 0; width: 25vh; height: 25%;"></div>
+                    <div id="square3_3" style="will-change: transform; background-color: #86a666; position: absolute; left: 0; top: 25%; width: 25vh; height: 25%;"></div>
+                    <div id="square2_3" style="will-change: transform; background-color: #ffffdd; position: absolute; top: 50%; left: 0; width: 25vh; height: 25%;"></div>
+                    <div id="square4_3" style="will-change: transform; background-color: #86a666; position: absolute; top: 75%; left: 0; width: 25vh; height: 25%;"></div>
+
+                    <div id="black_knight1_3"></div>
+                    <div id="black_knight2_3" style="opacity: 0.75;"></div>
+                    <div id="black_knight3_3" style="opacity: 0.5;"></div>
+                    <div id="black_knight4_3" style="opacity: 0.25;"></div>
+
+                    <img style="position: absolute; top: 20%; left: 15%; width: 30%; height: 30%;" data-src="media/prev/1.jpg">
+                    <img style="position: absolute; top: 20%; right: 3%; width: 30%; height: 30%;" data-src="media/prev/2.jpg">
+                    <img style="position: absolute; top: 60%; left: 15%; width: 30%; height: 30%;" data-src="media/prev/3.jpg">
+                    <img style="position: absolute; top: 60%; right: 3%; width: 30%; height: 30%;" data-src="media/prev/4.jpg">
+                    <video style="position: absolute; top: 40%; left: 40%; width: 30%; height: 30%;" id="vid4" data-autoplay src="media/prev/5.mp4"></video>
+                </section>
+
+                <section data-transition="slide-in fade-out">
+                    <video
+                        id="vid5"
+                        data-autoplay
+                        src="media/Gukesh_hug.mp4"
+                    ></video>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.addEventListener('slidechanged', function(event) {
+                document.querySelectorAll('.animate').forEach(el => el.classList.remove('animate'));
+                event.currentSlide.classList.add('animate');
+            });
+        </script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                controls: true,
+                progress: true,
+                center: true,
+                hash: true,
+                width: null,
+                height: null,
+                margin: 0,
+                minScale: 1,
+                maxScale: 1,
+                plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+                });
+		</script>
+	</body>
+</html>
